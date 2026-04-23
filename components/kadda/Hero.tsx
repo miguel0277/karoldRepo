@@ -17,7 +17,7 @@ const reveal = {
   show: (i = 0) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: 0.15 + i * 0.08, duration: 0.9, ease: [0.22, 1, 0.36, 1] },
+    transition: { delay: 0.15 + i * 0.08, duration: 0.9, ease: [0.22, 1, 0.36, 1] as const },
   }),
 };
 
@@ -211,7 +211,7 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, rotate: 8, y: 30 }}
             animate={{ opacity: 1, rotate: 6, y: 0 }}
-            transition={{ duration: 1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 1, delay: 0.5, ease: [0.22, 1, 0.36, 1] as const }}
             style={{
               rotateX: cardRotX,
               rotateY: cardRotY,

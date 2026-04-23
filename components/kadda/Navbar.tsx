@@ -89,7 +89,7 @@ export default function Navbar() {
         ref={headerRef}
         initial={{ y: -30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as const }}
         className={`fixed top-0 inset-x-0 z-50 transition-[background-color,backdrop-filter,border-color,padding] duration-500 ease-out ${
           scrolled
             ? "bg-[color:var(--color-cream)]/85 backdrop-blur-xl border-b border-[color:var(--color-border)] py-3"

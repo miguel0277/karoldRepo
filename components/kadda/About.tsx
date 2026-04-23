@@ -64,7 +64,7 @@ export default function About() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] as const }}
             className="lg:col-span-5 relative"
           >
             <div className="relative aspect-[4/5] max-w-[440px] mx-auto lg:mx-0">
