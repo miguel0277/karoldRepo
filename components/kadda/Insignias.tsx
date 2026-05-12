@@ -118,7 +118,7 @@ export default function Insignias() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.8 }}
-              className="font-display text-[clamp(2.25rem,5vw,4rem)] leading-[0.95] text-[color:var(--color-burgundy)] max-w-2xl"
+              className="font-display text-[clamp(1.85rem,4vw,3.25rem)] leading-[1.2] text-[color:var(--color-burgundy)] max-w-2xl"
             >
               Formación, herramientas y{" "}
               <span className="font-serif-italic text-[color:var(--color-ink)]">

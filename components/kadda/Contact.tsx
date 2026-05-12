@@ -76,7 +76,7 @@ export default function Contact() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.9 }}
-              className="font-display text-[clamp(2.25rem,5.5vw,4.75rem)] leading-[1.05] text-[color:var(--color-cream)]"
+              className="font-display text-[clamp(1.85rem,4.5vw,3.75rem)] leading-[1.5] text-[color:var(--color-cream)]"
             >
               ¿Trabajamos juntos?{" "}
         

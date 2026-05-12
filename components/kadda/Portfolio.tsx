@@ -91,7 +91,7 @@ export default function Portfolio() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.8 }}
-              className="font-display text-[clamp(2.5rem,6vw,5.5rem)] leading-[0.92] text-[color:var(--color-burgundy)] max-w-3xl"
+              className="font-display text-[clamp(2rem,4.75vw,3.75rem)] leading-[1.2] text-[color:var(--color-burgundy)] max-w-3xl"
             >
               Proyectos{" "}
               <span className="font-serif-italic text-[color:var(--color-ink)]">
@@ -139,7 +139,7 @@ export default function Portfolio() {
               <p className="text-[11px] uppercase tracking-[0.3em] text-[color:var(--color-burgundy)]/80">
                 Proyectos adicionales · Extras de diseño
               </p>
-              <h3 className="mt-3 font-display text-3xl md:text-5xl text-[color:var(--color-burgundy)] leading-tight">
+              <h3 className="mt-3 font-display text-2xl sm:text-3xl md:text-4xl text-[color:var(--color-burgundy)] leading-[1.25] break-words">
                 Posters, packaging, RA,
                 <br />
                 E-commerce
@@ -198,7 +198,7 @@ function ProjectRow({
               alt={`Mockup — ${project.title}`}
               fill
               sizes="(min-width: 1024px) 58vw, 100vw"
-              className="object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-[1.03]"
+              className="object-contain p-3 sm:p-4 transition-transform duration-[1.2s] ease-out group-hover:scale-[1.03]"
             />
             <div className={`absolute inset-0 ${accentOverlay[project.accent]} mix-blend-multiply`} />
           </div>
@@ -228,10 +228,10 @@ function ProjectRow({
             </div>
           </div>
 
-          <h3 className="font-display text-5xl md:text-6xl text-[color:var(--color-burgundy)] leading-[0.95]">
+          <h3 className="font-display text-3xl sm:text-4xl md:text-5xl text-[color:var(--color-burgundy)] leading-[1.15] break-words">
             {project.title}
           </h3>
-          <p className="mt-3 font-serif-italic text-xl text-[color:var(--color-ink)]/80">
+          <p className="mt-3 font-serif-italic text-lg sm:text-xl text-[color:var(--color-ink)]/80">
             {project.tagline}
           </p>
 

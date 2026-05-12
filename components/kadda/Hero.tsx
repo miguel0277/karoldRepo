@@ -117,9 +117,9 @@ export default function Hero() {
             animate="show"
             custom={1}
             style={{ x: wordX, y: wordY }}
-            className="mt-6 font-display text-[color:var(--color-burgundy)] leading-[0.88] will-change-transform"
+            className="mt-6 font-display text-[color:var(--color-burgundy)] leading-[1.1] will-change-transform"
           >
-            <span className="block text-[clamp(3rem,11vw,8.5rem)]">kadda</span>
+            <span className="block text-[clamp(2.5rem,9vw,7rem)]">kadda</span>
           </motion.h1>
 
           <motion.p
@@ -203,7 +203,7 @@ export default function Hero() {
               </div>
 
               <div className="flex flex-col items-center text-center py-10">
-                <span className="font-display text-[140px] leading-none text-[color:var(--color-cream)]">
+                <span className="font-display text-[clamp(80px,18vw,140px)] leading-none text-[color:var(--color-cream)]">
                   k
                 </span>
                 <span className="mt-2 font-serif-italic text-[color:var(--color-slate-soft)] text-lg">

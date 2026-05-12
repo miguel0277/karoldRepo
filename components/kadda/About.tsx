@@ -115,7 +115,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.8 }}
-              className="font-display text-[clamp(2.75rem,6vw,5rem)] leading-[0.95] text-[color:var(--color-burgundy)]"
+              className="font-display text-[clamp(2rem,4.5vw,3.75rem)] leading-[1.2] text-[color:var(--color-burgundy)]"
             >
               Diseñadora con{" "}
               propósito.
