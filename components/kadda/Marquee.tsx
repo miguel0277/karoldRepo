@@ -3,13 +3,11 @@
 import { KaddaOrnament } from "./KaddaLogo";
 
 const WORDS = [
-  "Humana",
-  "Analítica",
-  "Intencional",
+  "Prototipado",
+  "UI interface",
   "UX Research",
-  "Sistemas de diseño",
-  "Agile UX",
-  "IA aplicada",
+  "UX/UI",
+  "UX writing",
 ];
 
 export default function Marquee() {

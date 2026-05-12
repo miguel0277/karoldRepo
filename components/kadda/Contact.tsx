@@ -26,7 +26,7 @@ const CHANNELS = [
   {
     icon: MapPin,
     label: "Ubicación",
-    value: "Bogotá, Colombia",
+    value: "Boyacá, Colombia",
     href: null,
   },
 ];
@@ -76,12 +76,10 @@ export default function Contact() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.9 }}
-              className="font-display text-[clamp(3rem,8vw,7rem)] leading-[0.9] text-[color:var(--color-cream)]"
+              className="font-display text-[clamp(2.25rem,5.5vw,4.75rem)] leading-[1.05] text-[color:var(--color-cream)]"
             >
-              Hagamos algo{" "}
-              <span className="font-serif-italic text-[color:var(--color-cream)]/80">
-                pensado.
-              </span>
+              ¿Trabajamos juntos?{" "}
+        
             </motion.h2>
 
             <motion.p
@@ -91,9 +89,9 @@ export default function Contact() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="mt-8 max-w-lg text-base md:text-lg leading-relaxed text-[color:var(--color-cream)]/80"
             >
-              Abierta a roles de UX/UI junior, prácticas profesionales y
+              Abierta a roles de UX/UI junior y
               colaboraciones con startups tech o corporativos que busquen
-              diseño con criterio.
+              diseño con personalidad.
             </motion.p>
 
             <motion.a

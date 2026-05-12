@@ -34,6 +34,29 @@ export const KaddaOrnament = memo(function KaddaOrnament({
 });
 
 /**
+ * Símbolo "swan" de la marca (4 puntas), tomado de card.svg.
+ */
+export const KaddaSwan = memo(function KaddaSwan({
+  className,
+  color = "currentColor",
+}: {
+  className?: string;
+  color?: string;
+}) {
+  return (
+    <svg
+      viewBox="28 79 67 60"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      aria-hidden="true"
+      fill={color}
+    >
+      <path d="M70.28,84.06c0-2.17,1.09-3.84,3.93-3.84v-.84s-10.02-.02-10.02-.02c-.51,0-.83.21-1.05.53-.22-.32-.54-.53-1.05-.53l-10.02.02v.84c2.84,0,3.93,1.66,3.93,3.84.02,12.7-24.29,10.07-24.28,17.75,0,5.1,9.95,3.66,16.82,16.01,1.59,2.84,2.6,6.93,3.95,11.77,1.04,3.66,2.09,8.44,5.58,8.88v.03s.33,0,.33,0c.07,0,.13.02.2.02h4.54s4.54,0,4.54,0c.07,0,.13-.01.2-.02h.33s0-.03,0-.03c3.49-.44,4.54-5.23,5.58-8.88,1.35-4.84,2.36-8.93,3.95-11.77,6.87-12.35,16.81-10.91,16.82-16.01.01-7.69-24.3-5.06-24.28-17.75ZM70.97,117.64c-3.43,5.51-3.36,10.1-5.71,15.69-.52,1.22-1.19,2.21-2.12,2.93-.94-.72-1.6-1.71-2.12-2.93-2.35-5.59-2.27-10.19-5.71-15.69-8.29-13.27-22.74-10.9-22.75-15.83,0-5.54,27.07-3.99,30.58-17.27,3.51,13.29,30.59,11.73,30.58,17.27,0,4.93-14.46,2.56-22.75,15.83Z" />
+    </svg>
+  );
+});
+
+/**
  * Glyph circular oficial de kadda.
  * Replica fiel del logo-claro: círculo + dos swans internos.
  */
@@ -63,6 +86,49 @@ export const KaddaGlyph = memo(function KaddaGlyph({
 });
 
 /**
+ * Logo completo desde logo-claro.svg con color controlable vía currentColor.
+ */
+export function KaddaLogoClaro({
+  className,
+  color = "currentColor",
+}: {
+  className?: string;
+  color?: string;
+}) {
+  return (
+    <svg
+      viewBox="0 0 504.68 156.67"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      aria-label="kadda"
+      fillRule="evenodd"
+    >
+      <path
+        fill={color}
+        d="M55.84,75.78c2.35-5.59,2.27-10.19,5.71-15.69,8.29-13.27,22.74-10.9,22.75-15.83,0-5.54-27.07-3.99-30.58-17.27-3.51,13.29-30.59,11.73-30.58,17.27,0,4.93,14.46,2.56,22.75,15.83,3.43,5.51,3.36,10.1,5.71,15.69.52,1.22,1.19,2.21,2.12,2.93.94-.72,1.6-1.71,2.12-2.93Z"
+      />
+      <path
+        fill={color}
+        d="M90.12,77.28c-3.43-5.51-3.36-10.1-5.71-15.69-.52-1.22-1.19-2.21-2.12-2.93-.94.72-1.6,1.71-2.12,2.93-2.35,5.59-2.27,10.19-5.71,15.69-8.29,13.27-22.74,10.9-22.75,15.83,0,5.54,27.07,3.99,30.58,17.27,3.51-13.29,30.59-11.73,30.58-17.27,0-4.93-14.46-2.56-22.75-15.83Z"
+      />
+      <path
+        fill={color}
+        d="M68,.68C30.44.68,0,31.13,0,68.68s30.44,68,68,68,68-30.44,68-68S105.56.68,68,.68ZM48.97,80.94h-.33v-.03c-3.49-.44-4.54-5.23-5.58-8.88-1.35-4.84-2.36-8.93-3.95-11.77-6.87-12.35-16.81-10.91-16.82-16.01-.01-7.69,24.3-5.06,24.28-17.75,0-2.17-1.09-3.84-3.93-3.84v-.84s10.02-.02,10.02-.02c.51,0,.83.21,1.05.53.22-.32.54-.53,1.05-.53l10.02.02v.84c-2.84,0-3.93,1.66-3.93,3.84-.02,12.7,24.29,10.07,24.28,17.75,0,5.1-9.95,3.66-16.82,16.01-1.59,2.84-2.6,6.93-3.95,11.77-1.04,3.66-2.09,8.44-5.58,8.88v.03h-.33c-.07,0-.13.02-.2.02h-4.54s-4.54,0-4.54,0c-.07,0-.13-.01-.2-.02ZM89.43,110.86c0,2.17,1.09,3.84,3.93,3.84v.84s-10.02.02-10.02.02c-.51,0-.83-.21-1.05-.53-.22.32-.54.53-1.05.53l-10.02-.02v-.84c2.84,0,3.93-1.66,3.93-3.84.02-12.7-24.29-10.07-24.28-17.75,0-5.1,9.95-3.66,16.82-16.01,1.59-2.84,2.6-6.93,3.95-11.77,1.04,3.66,2.09,8.44,5.58,8.88v-.03h.33c.07,0,.13-.02.2-.02h4.54s4.54,0,4.54,0c.07,0,.13.01.2.02h.33v.03c3.49.44,4.54,5.23,5.58,8.88,1.35,4.84,2.36,8.93,3.95,11.77,6.87,12.35,16.81,10.91,16.82,16.01.01,7.69-24.3,5.06-24.28,17.75Z"
+      />
+      <text
+        fill={color}
+        fontSize={94}
+        style={{ fontFamily: "var(--font-display)" }}
+        transform="translate(162.52 115.68)"
+      >
+        <tspan style={{ letterSpacing: "-0.1em" }} x="0" y="0">k</tspan>
+        <tspan style={{ letterSpacing: "-0.04em" }} x="56.4" y="0">adda</tspan>
+      </text>
+    </svg>
+  );
+}
+
+/**
  * Lockup horizontal: glyph circular + wordmark "kadda".
  */
 export function KaddaLockup({
@@ -76,10 +142,17 @@ export function KaddaLockup({
 }) {
   return (
     <div className={`flex items-center gap-2.5 ${className ?? ""}`}>
-      <KaddaGlyph
-        color={color}
-        className={compact ? "h-[34px] w-[34px]" : "h-11 w-11"}
-      />
+      <span
+        className={`inline-flex items-center justify-center rounded-full bg-[color:var(--color-ink)] ${
+          compact ? "h-[34px] w-[34px]" : "h-11 w-11"
+        }`}
+        aria-hidden="true"
+      >
+        <KaddaSwan
+          color="var(--color-cream)"
+          className={compact ? "h-[20px] w-[20px]" : "h-[26px] w-[26px]"}
+        />
+      </span>
       <span
         className={`font-display tracking-tight leading-none ${
           compact ? "text-[1.55rem]" : "text-[1.9rem]"

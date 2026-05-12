@@ -22,8 +22,8 @@
   --color-border: rgba(87, 6, 3, 0.14);
   --color-border-strong: rgba(87, 6, 3, 0.28);
 
-  /* Typography — Italiana (TAN-PEARL substitute) + Outfit + Cormorant */
-  --font-display: var(--font-italiana), "Italiana", "Cormorant Garamond", ui-serif, Georgia, serif;
+  /* Typography — TAN-PEARL (local) + Outfit + Cormorant */
+  --font-display: var(--font-tan-pearl), "TAN-PEARL", "TAN - PEARL", "Cormorant Garamond", ui-serif, Georgia, serif;
   --font-sans: var(--font-outfit), "Outfit", ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-serif: var(--font-cormorant), "Cormorant Garamond", ui-serif, Georgia, serif;
 
@@ -66,6 +66,12 @@ blockquote {
 }
 
 /* ============ TYPOGRAPHY UTILITIES ============ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
 .font-display {
   font-family: var(--font-display);
   font-weight: 400;

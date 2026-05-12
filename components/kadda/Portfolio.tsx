@@ -28,9 +28,9 @@ const PROJECTS: Project[] = [
     summary:
       "App para smartwatch que acompaña discretamente a personas con TCA en su recuperación, detectando episodios y conectando al equipo médico sin invadir la privacidad del usuario.",
     reto: "¿Cómo acompañar digitalmente a pacientes con TCA sin invadir su privacidad?",
-    categorias: ["UX Research", "Wearable", "Salud Mental"],
-    herramientas: ["Figma", "Illustrator", "Notion"],
-    image: "/karold/balancewatch.jpg",
+    categorias: ["UX Research", "Wearable", "Salud Mental", "UX/UI"],
+    herramientas: ["Illustrator", "Notion", "Photoshop"],
+    image: "/karold/balance.png",
     accent: "burgundy",
     align: "left",
   },
@@ -42,9 +42,9 @@ const PROJECTS: Project[] = [
     summary:
       "Sitio web para promover talleres y espacios donde las personas reconectan con actividades de ocio que las distraen, motivan y regresan al bienestar cotidiano.",
     reto: "¿Cómo motivar a las personas a reconectar con actividades de ocio que les devuelvan el bienestar?",
-    categorias: ["UI Design", "Sitio Web", "Bienestar"],
-    herramientas: ["Figma", "Illustrator"],
-    image: "/karold/conectando.jpg",
+    categorias: ["UI Design", "Sitio Web", "Bienestar", "UX Design"],
+    herramientas: ["Figma", "Illustrator", "Trello"],
+    image: "/karold/conectando.png",
     accent: "slate",
     align: "right",
   },
@@ -52,13 +52,13 @@ const PROJECTS: Project[] = [
     id: "vpop",
     year: "2025",
     title: "Vpop",
-    tagline: "Estampa lo tuyo, compra lo tuyo.",
+    tagline: "Estampa tus mejores ideas.",
     summary:
       "Prototipo de e-commerce para personalizar y estampar prendas y objetos a medida antes de comprarlos: una experiencia fluida, tactil y divertida.",
     reto: "¿Cómo hacer que personalizar una prenda estampada sea una experiencia fluida y divertida?",
-    categorias: ["UI Design", "E-commerce", "Prototipado"],
-    herramientas: ["Figma"],
-    image: "/karold/vpop.jpg",
+    categorias: ["UI Design", "E-commerce", "Prototipado", "UX Design"],
+    herramientas: ["Figma", "Illustrator", "Notion", "ChatGPT"],
+    image: "/karold/vpop.png",
     accent: "deep",
     align: "left",
   },
@@ -137,16 +137,17 @@ export default function Portfolio() {
           <div className="relative grid md:grid-cols-12 gap-6 p-8 md:p-12 items-center">
             <div className="md:col-span-8">
               <p className="text-[11px] uppercase tracking-[0.3em] text-[color:var(--color-burgundy)]/80">
-                Playground · Extras
+                Proyectos adicionales · Extras de diseño
               </p>
               <h3 className="mt-3 font-display text-3xl md:text-5xl text-[color:var(--color-burgundy)] leading-tight">
-                Exploraciones gráficas, packaging,{" "}
-                <span className="font-serif-italic">posters</span>.
+                Posters, packaging, RA,
+                <br />
+                E-commerce
               </h3>
               <p className="mt-4 max-w-xl text-sm md:text-base text-[color:var(--color-text)]/70 leading-relaxed">
-                Un espacio para los experimentos visuales que no entran en una
-                categoría, pero sí definen la mirada con la que observo cada
-                proyecto.
+                Un espacio para los proyectos realizados en mi carrera en 
+                distintas áreas, que definen mi proceso creativo y la manera 
+                en que abordo cada proyecto. 
               </p>
             </div>
             <div className="md:col-span-4 flex md:justify-end">
@@ -154,7 +155,7 @@ export default function Portfolio() {
                 href="#contacto"
                 className="btn-arrow inline-flex items-center gap-2 rounded-full border border-[color:var(--color-burgundy)] px-6 py-3 text-xs uppercase tracking-[0.22em] text-[color:var(--color-burgundy)] hover:bg-[color:var(--color-burgundy)] hover:text-[color:var(--color-cream)] transition-colors"
               >
-                Solicitar acceso
+                Ver proyectos
                 <ArrowUpRight className="h-4 w-4" strokeWidth={1.5} />
               </a>
             </div>

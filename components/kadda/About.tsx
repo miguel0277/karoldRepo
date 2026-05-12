@@ -74,7 +74,7 @@ export default function About() {
               {/* Portrait container */}
               <div className="relative h-full w-full overflow-hidden rounded-[28px] bg-[color:var(--color-cream-deep)]">
                 <Image
-                  src="/karold/portrait.jpg"
+                  src="/karold/fotokarold.png"
                   alt="Retrato editorial de Karold Alvarado"
                   fill
                   sizes="(min-width: 1024px) 440px, 90vw"
@@ -94,10 +94,10 @@ export default function About() {
                 className="absolute -left-6 bottom-10 bg-[color:var(--color-cream)] border-2 border-[color:var(--color-burgundy)] rounded-2xl px-5 py-3"
               >
                 <p className="text-[10px] uppercase tracking-[0.28em] text-[color:var(--color-burgundy)]/70">
-                  Basada en
+                  Diseñadora
                 </p>
                 <p className="font-display text-xl text-[color:var(--color-burgundy)] leading-tight">
-                  Bogotá · CO
+                  UX/UI
                 </p>
               </motion.div>
 
@@ -117,11 +117,8 @@ export default function About() {
               transition={{ duration: 0.8 }}
               className="font-display text-[clamp(2.75rem,6vw,5rem)] leading-[0.95] text-[color:var(--color-burgundy)]"
             >
-              Diseñadora que{" "}
-              <span className="font-serif-italic text-[color:var(--color-ink)]">
-                entiende
-              </span>{" "}
-              a las personas.
+              Diseñadora con{" "}
+              propósito.
             </motion.h2>
 
             <motion.div
@@ -134,16 +131,14 @@ export default function About() {
               <p>
                 Soy <strong className="font-medium">Karold Alvarado</strong>,
                 estudiante de Diseño de Interacción en la Universidad Santo
-                Tomás (Tunja) y formada en UX/UI por Coderhouse. Trabajo en la
-                intersección entre investigación, estrategia visual y escritura
+                Tomás (Tunja) y certificada en UX/UI por Coderhouse. Trabajo en la
+                en investigación, estrategia visual y escritura
                 clara.
               </p>
               <p>
                 Me interesa lo que{" "}
-                <span className="font-serif-italic text-[color:var(--color-burgundy)]">
-                  ocurre antes de diseñar
-                </span>
-                : escuchar, analizar, dudar. Me gusta acompañar procesos
+                ocurre antes de diseñar
+                : Escuchar, analizar, dudar. Me gusta acompañar procesos
                 sensibles con discreción y convertir hallazgos complejos en
                 decisiones simples.
               </p>

@@ -8,7 +8,7 @@ import {
   useSpring,
   useTransform,
 } from "framer-motion";
-import { KaddaLockup } from "./KaddaLogo";
+import Image from "next/image";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 
 const LINKS = [
@@ -113,7 +113,14 @@ export default function Navbar() {
             className="text-[color:var(--color-burgundy)] transition-opacity hover:opacity-80 will-change-transform"
             aria-label="kadda · inicio"
           >
-            <KaddaLockup compact />
+            <Image
+              src="/brand/logo-claro.svg"
+              alt="kadda"
+              width={161}
+              height={50}
+              priority
+              className="h-10 w-auto"
+            />
           </motion.a>
 
           <nav className="hidden md:flex items-center gap-8">

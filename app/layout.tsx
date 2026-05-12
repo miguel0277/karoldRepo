@@ -1,11 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Italiana, Outfit, Cormorant_Garamond } from "next/font/google";
+import { Outfit, Cormorant_Garamond } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const italiana = Italiana({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-italiana",
+const tanPearl = localFont({
+  src: "./fonts/tan-pearl.otf",
+  variable: "--font-tan-pearl",
   display: "swap",
 });
 
@@ -63,7 +63,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${italiana.variable} ${outfit.variable} ${cormorant.variable} bg-[color:var(--color-bg)]`}
+      className={`${tanPearl.variable} ${outfit.variable} ${cormorant.variable} bg-[color:var(--color-bg)]`}
     >
       <body className="antialiased font-sans bg-[color:var(--color-bg)] text-[color:var(--color-text)]">
         {children}

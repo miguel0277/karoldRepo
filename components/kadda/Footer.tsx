@@ -16,7 +16,7 @@ export default function Footer() {
         </p>
 
         <p className="text-[11px] uppercase tracking-[0.28em] text-[color:var(--color-cream)]/50">
-          © {year} kadda · Bogotá
+          © {year} kadda · Boyacá
         </p>
       </div>
     </footer>

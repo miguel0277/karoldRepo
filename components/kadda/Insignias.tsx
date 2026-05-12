@@ -59,11 +59,11 @@ const CERTIFICATIONS: Array<{
 const TOOLS_GROUPS = [
   {
     label: "Diseño",
-    items: ["Figma", "FigJam", "Figma Make", "Illustrator", "Photoshop", "XD", "InDesign"],
+    items: ["Figma", "Figma Make", "Illustrator", "Photoshop", "Adobe express", "InDesign"],
   },
   {
     label: "Motion & Video",
-    items: ["After Effects", "Premiere"],
+    items: ["After Effects", "Premiere", "CapCut"],
   },
   {
     label: "Research & Gestión",
@@ -71,7 +71,7 @@ const TOOLS_GROUPS = [
   },
   {
     label: "Otros",
-    items: ["Unity", "Reaper", "Express"],
+    items: ["Unity", "Reaper", "VS Code"],
   },
 ];
 

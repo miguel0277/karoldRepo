@@ -95,39 +95,7 @@ export default function Hero() {
       style={{ perspective: 1200 }}
     >
       {/* Background subtle burgundy wash top */}
-      <motion.div
-        style={{ opacity: opacityBg }}
-        className="pointer-events-none absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-[color:var(--color-cream-deep)]/60 to-transparent"
-        aria-hidden="true"
-      />
-
-      {/* Cursor-tracking warm glow */}
-      <motion.div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 opacity-60 mix-blend-multiply"
-        style={{ background: glowBg }}
-      />
-
-      {/* Decorative ornaments floating */}
-      <motion.div
-        style={{ y: yOrn1, x: orn1X, translateY: orn1Y }}
-        className="pointer-events-none absolute -top-10 -right-10 md:top-10 md:right-12 w-[220px] md:w-[320px] text-[color:var(--color-burgundy)]/10"
-        aria-hidden="true"
-      >
-        <div className="animate-orbit">
-          <KaddaOrnament />
-        </div>
-      </motion.div>
-
-      <motion.div
-        style={{ y: yOrn2, x: orn2X, translateY: orn2Y }}
-        className="pointer-events-none absolute -bottom-20 -left-16 md:left-10 md:bottom-24 w-[180px] md:w-[240px] text-[color:var(--color-slate)]/20"
-        aria-hidden="true"
-      >
-        <div className="animate-orbit-rev">
-          <KaddaOrnament />
-        </div>
-      </motion.div>
+      
 
       <div className="container-kadda relative grid lg:grid-cols-12 gap-10 lg:gap-16 items-center w-full">
         {/* LEFT — Wordmark + tagline */}
@@ -140,7 +108,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.32em] text-[color:var(--color-burgundy)]/70"
           >
             <span className="h-px w-8 bg-[color:var(--color-burgundy)]/40" />
-            Diseñadora de interacción · Bogotá, CO
+            Diseñadora de interacción · Boyacá, CO
           </motion.span>
 
           <motion.h1
@@ -151,7 +119,7 @@ export default function Hero() {
             style={{ x: wordX, y: wordY }}
             className="mt-6 font-display text-[color:var(--color-burgundy)] leading-[0.88] will-change-transform"
           >
-            <span className="block text-[clamp(4.5rem,16vw,13rem)]">kadda</span>
+            <span className="block text-[clamp(3rem,11vw,8.5rem)]">kadda</span>
           </motion.h1>
 
           <motion.p
@@ -162,9 +130,7 @@ export default function Hero() {
             className="mt-8 max-w-xl text-lg md:text-2xl font-light leading-[1.35] text-[color:var(--color-ink)]"
           >
             Convierto{" "}
-            <span className="font-serif-italic text-[color:var(--color-burgundy)]">
-              necesidades reales
-            </span>{" "}
+            necesidades reales
             en experiencias con propósito.
           </motion.p>
 
@@ -175,9 +141,9 @@ export default function Hero() {
             custom={3}
             className="mt-5 max-w-lg text-sm md:text-[15px] leading-relaxed text-[color:var(--color-text-soft)]"
           >
-            Karold Dayana Alvarado — diseño de interacción con intención.
+            Karold Alvarado Antolinez — Diseño de interacción con intención.
             Experiencias que conectan a las personas con lo que necesitan, con
-            claridad, criterio y carácter propio.
+            claridad y propósito.
           </motion.p>
 
           <motion.div
@@ -241,11 +207,7 @@ export default function Hero() {
                   k
                 </span>
                 <span className="mt-2 font-serif-italic text-[color:var(--color-slate-soft)] text-lg">
-                  Warm Precision
-                </span>
-                <div className="mt-6 h-px w-14 bg-[color:var(--color-cream)]/40" />
-                <span className="mt-6 text-[10px] uppercase tracking-[0.3em] text-[color:var(--color-cream)]/70">
-                  2023 — now
+                  apuesta por kadda
                 </span>
               </div>
             </div>
